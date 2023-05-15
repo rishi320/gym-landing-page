@@ -7,14 +7,13 @@ export const Services = (props) => {
         <div className="section-title">
           <h2>Our Services</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+          Let us guide you towards a healthier, stronger, and more confident version of yourself. 
           </p>
         </div>
-        <div className="row">
+        <div className="row services-grid">
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
+                <div key={`${i}`}>
                   {" "}
                   <i className={d.icon}></i>
                   <div className="service-desc">

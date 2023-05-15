@@ -339,6 +339,12 @@ header .intro-text {
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
+
+#services .services-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 #services h3 {
   font-weight: 500;
   padding: 5px 0;
@@ -598,9 +604,26 @@ label {
 #footer a:hover {
   border-bottom: 2px solid #608dfd;
 }
+/* 
+#features .features-grid{
+  display: grid;
+  grid-template-columns: 1fr ;
+} */
 
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #services .services-grid{
+    padding: 0px 20px;
+    display: block;
+  }
+  
+  #features .features-grid{
+    padding: 0px 20px;
+    display: block;
   }
 }
